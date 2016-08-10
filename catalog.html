@@ -27,16 +27,20 @@
                 </fieldset>
                 <fieldset class="hotel-type">
                     <legend>тип жилья:</legend>
-                    <label><input type="checkbox" name="pool">Гостиница</label>
-                    <label><input type="checkbox" name="parking">Мотель</label>
-                    <label><input type="checkbox" name="wi-fi">Аппартементы</label>
+                    <label><input type="checkbox" name="hotel">Гостиница</label>
+                    <label><input type="checkbox" name="motel">Мотель</label>
+                    <label><input type="checkbox" name="appartment">Аппартементы</label>
                 </fieldset>
                 <fieldset class="price">
                     <legend>Стоимость в сутки(Р):</legend>
                     <label><input type="number" name="min-price" min="0" step="1">от</label>
-                    <label><input type="number" name="max-price" min="0" step="1">от</label>
-                    <input type="range" min="0" max="5000">
+                    <label><input type="number" name="max-price" min="0" step="1">до</label>
                 </fieldset>
+                <div class="scale">
+                    <div class="inside-scale"></div>
+                </div>
+                <div class="slider min-slider"></div>
+                <div class="slider max-slider"></div>
                 <button type="submit">Показать</button>
             </form>
             <div class="sort">
@@ -46,8 +50,8 @@
                 <a href="#">По типу</a>
                 <a href="#">По рейтингу</a>
                 <div class="up-down">
-                    <a href="#" class="link-up"></a>
-                    <a href="#" class="link-down"></a>
+                    <a href="#" class="link-up">Up</a>
+                    <a href="#" class="link-down">Down</a>
                 </div>
             </div>
             <div class="result">
@@ -104,9 +108,9 @@
                 <a href="#">#VISITSEDONA</a><br>
             </section>
             <section class="footer-social">
-                <a class="social-btn social-btn-tw" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-youtube" href="#"></a>
+                <a class="social-btn social-btn-tw" href="#">Twitter</a>
+                <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                <a class="social-btn social-btn-youtube" href="#">Youtube</a>
             </section>
             <section class="footer-copyright">
                 <p>Website by</p>

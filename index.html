@@ -11,96 +11,92 @@
                 <ul>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
-                    <li class="logo"><img src="img/logo.png" alt="sedona" width="67" height="56"></li>
                     <li><a href="#">Карта штата</a></li>
                     <li><a href="#">Гостиницы</a></li>
                 </ul>
             </nav>
+            <img src="img/logo.png" alt="sedona" width="67" height="56">
         </header>
         <main class="container">
-            <div class="intro">
-                <p class="welcome-w">Welcome</p>
-                <p class="welcome-to">to the gorgerous</p>
-                <p class="welcome-s">Sedona</p>
-                <p class="welcome-g">"Because the Grand<br>
-                    Conyon sucks!"</p>
-                <div class="prelude">
-                    <p class="prelude-title">Седона - небольшой городок в Аризоне,<br>
+            <div class="welcom">
+                <img src="http://placehold.it/150x100" alt="Welcom to Sedona"> <!-- добавить габариты изображения  -->
+                <div class="reason">
+                    <p class="reason-title">Седона - небольшой городок в Аризоне,
                         заслущивающий большего!</p>
-                    <p class="prelude-text">Рассмотрим 5 причин, по которям Седона круче, чем Гранд Каньон!</p>
+                    <p class="reason-text">Рассмотрим 5 причин, по которям Седона круче, чем Гранд Каньон!</p>
                 </div>
             </div>
             <div class="features">
                 <div class="left blue">
-                    <h2>Настойщий<br>
+                    <h2>Настойщий
                         городок</h2>
                     <p>- №1 -</p>
-                    <p>Седона - не аттракцион для туристов,<br>
+                    <p>Седона - не аттракцион для туристов,
                         там течет своя жизнь</p>
                 </div>
-                <img src="http://placehold.it/150x100" alt="image" width="800" height="256">
+                
             </div>
             <div class="features">
-                <div class="left">
-                    <img src="http://placehold.it/150x100" alt="house" width="75" height="72">
+                <div class="left features-block">
+                    
                     <h2>Жилье</h2>
-                    <p>Рекомендуем пожить в настоящем<br>
+                    <p>Рекомендуем пожить в настоящем
                         мотеле, все как в кино</p>
                 </div>
-                <div class="center">
-                    <img src="http://placehold.it/150x100" alt="food" width="74" height="70">
+                <div class="center features-block">
+                    
                     <h2>Еда</h2>
-                    <p>Всегда заказывайте фирмерный бургер<br>
+                    <p>Всегда заказывайте фирмерный бургер
                         вы не разочаруетесь!</p>
                 </div>
-                <div class="right">
-                    <img src="http://placehold.it/150x100" alt="souvenir" width="64" height="76">
+                <div class="right features-block">
+                    
                     <h2>Сувениры</h2>
-                    <p>Не только китайского, но и местного<br>
+                    <p>Не только китайского, но и местного
                         производства</p>
                     
                 </div>
             </div>
             <div class="features">
-                <img src="http://placehold.it/150x100" alt="image" width="800" height="256">
+                
                 <div class="right blue">
-                    <h2>Там есть<br>
+                    <h2>Там есть
                         мост дьявола</h2>
                     <p>- №2 -</p>
-                    <p>Да, по нему можно пройти! Если конечно<br>
+                    <p>Да, по нему можно пройти! Если конечно
                         Вы осмелитесь</p>
                 </div>
             </div>
             <div class="features">
                 <div class="left">
-                    <h2>Небольшая<br>
+                    <h2>Небольшая
                         площадь</h2>
                     <p>- №3 -</p>
-                    <p>Все достопримечательности<br>
+                    <p>Все достопримечательности
                         находятся очень близко</p>
                 </div>
                 <div class="center">
-                    <h2>Красивая<br>
+                    <h2>Красивая
                         дорога</h2>
                     <p>- №4 -</p>
-                    <p>Ехать в Седону из Лас-Вегаса совсем<br>
+                    <p>Ехать в Седону из Лас-Вегаса совсем
                         не скучно!</p>
                 </div>
                 <div class="right">
-                    <h2>Мало<br>
+                    <h2>Мало
                         туристов</h2>
                     <p>- №5 -</p>
-                    <p>Большинство едет в Гранд Каньон и<br>
+                    <p>Большинство едет в Гранд Каньон и
                         толпится там</p>
                 </div>
             </div>
             <div class="hotel">
                 <p class="hotel-title">Заинтересовались?</p>
-                <p class="hotel-text">Укажите предполагаемые даты поездки<br>
+                <p class="hotel-text">Укажите предполагаемые даты поездки
                     и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 <div class="map"></div>
+                <a class="hotel-search-btn" href="#"><h3>Поиск гостиницы в Седоне</h3></a>
                 <form action="#" method="get">
-                    <legend>Поиск гостиницы в Седоне</legend>
                     <label>
                         Дата заезда:
                         <input type="date" name="checkin">
@@ -112,17 +108,17 @@
                     <div class="hotel-people">
                         <label>
                             Взрослые
-                            <a class="hotel-people-less" href="#">Меньше</a>
+                            <button class="hotel-people-less" href="#">-</button>
                             <input type="number" min="1" step="1" name="adult">
-                            <a class="hotel-people-more" href="#">Больше</a>
+                            <button class="hotel-people-more" href="#">+</button>
                         </label>
                     </div>
                     <div class="hotel-people">
                         <label>
                             Дети
-                            <a class="hotel-people-less" href="#">Меньше</a>
+                            <button class="hotel-people-less" href="#">-</button>
                             <input type="number" min="1" step="1" name="children">
-                            <a class="hotel-people-more" href="#">Больше</a>
+                            <button class="hotel-people-more" href="#">+</button>
                         </label>
                     </div>
                     <button type="submit">Найти</button>
@@ -131,12 +127,12 @@
         </main>
         <footer>
             <section class="footer-visite">
-                <a href="#">#VISITSEDONA</a><br>
+                <a href="#">#VISITSEDONA</a>
             </section>
             <section class="footer-social">
-                <a class="social-btn social-btn-tw" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-youtube" href="#"></a>
+                <a class="social-btn social-btn-tw" href="#">Twitter</a>
+                <a class="social-btn social-btn-fb" href="#">Facebook</a>
+                <a class="social-btn social-btn-youtube" href="#">Youtube</a>
             </section>
             <section class="footer-copyright">
                 <p>Website by</p>
