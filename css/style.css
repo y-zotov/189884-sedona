@@ -1,9 +1,16 @@
 html,
 body {
-	font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
 }
+body {
+	
+}
+
 nav {
 	font-weight: bold;
 	line-height: 26px;
@@ -11,10 +18,189 @@ nav {
 h2 {
 	font-size: 21px;
 	line-height: 21px;
+	text-align: center;
 }
-h2.hotel-name {
+p {
+	text-align: center;
+}
+
+.container {
+	min-width: 768px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.clearfix:after {
+  content: "";
+	display: table;
+  clear: both;
+}
+.main-header {
+	min-height: 56px;
+}
+.main-navigation ul {
+	padding: 0;
+}
+.main-navigation li {
+	list-style: none;
+	width: 20%;
+	text-align: center;
+}
+.main-navigation li:nth-child(1), 
+.main-navigation li:nth-child(2) {
+	float: left;
+}
+.main-navigation li:nth-child(3), 
+.main-navigation li:nth-child(4) {
+	float: right;
+}
+.logo-link {
+	position:absolute;
+	left: 47%;
+	top: 14px;
+}
+
+.welcome {
+	min-height: 508px;
+	background: 
+		url("../img/welcome-to-sedona.png") no-repeat 50% 50%,
+		url("../img/shape.png") no-repeat 50% 100%,
+		url("../img/background-photo.jpg") no-repeat 50% 0;
+	background-size: 
+		auto,
+		100% 57px,
+		auto;
+}
+.reason {
+	min-height: 216px;
+}
+.reason-title,
+.reason-text,
+.hotel-title,
+.hotel-text {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
 	line-height: 26px;
 }
+.reason-title,
+.hotel-title {
+	font-weight: bold;
+	font-size: 21px;
+}
+.city-1,
+.view-1 {
+	min-height: 256px;
+	float: left;
+}
+.city-1 {
+	width: 33.3333%;
+}
+.view-1 {
+	width: 66.6666%;
+	background: url("../img/view-1.jpg") no-repeat 50% 50%;
+}
+.features-block {
+	float: left;
+	min-height: 330px;
+	width: 33.3333%
+}
+.city-2,
+.view-2 {
+	min-height: 256px;
+	float: left;
+}
+.city-2 {
+	width: 33.3333%;
+}
+.view-2 {
+	width: 66.6666%;
+	background: url("../img/view-2.jpg") no-repeat 50% 50%;
+}
+.features-city {
+	float: left;
+	min-height: 256px;
+	width: 33.3333%
+}
+.hotel {
+	min-height: 291px;
+}
+.hotel-search-btn {
+	display: block;
+	margin: 0 auto;
+	min-height: 86px;
+	width: 568px;
+	text-align: center;
+}
+.hotel form {
+	position: absolute;
+	left: 33%;
+	width: 568px;
+	margin: 0 auto;
+	min-height: 395px;
+}
+.map {
+	min-height: 473px;
+	background: url("../img/map.jpg") no-repeat 50% 0;
+}
+.main-footer section {
+	float: left;
+	width: 33.3333%;
+	min-height: 120px;
+	text-align: center;
+}
+
+
+/*для catalog.html*/
+.hotel-param,
+.sort,
+.result{
+	padding-left: 6%;
+	padding-right: 6%;
+}
 .hotel-param {
-	color: #fff;
+	min-height: 217px;
+}
+.hotel-infrastructure,
+.hotel-type {
+	float: left;
+}
+.price {
+	float: right;
+}
+.sort {
+	min-height: 86px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.sort p,
+.sort a {
+	margin: 0;
+	float: left;
+}
+.up-down {
+	float:right;
+}
+.hotel-features,
+.result a{
+	float: left;
+}
+.stars-rating {
+	float: right;
+}
+.result {
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 30px;
+	min-height: 119px;
+}
+.hotel-features {
+	margin-left: 31px;
+}
+.hotel-features h2 {
+	margin: 0;
+}
+.hotel-price p,
+.hotel-info, 
+.hotel-reserv {
+	float: left;
+	width: 110px;
+	margin-right: 6px;
 }
