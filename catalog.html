@@ -5,6 +5,7 @@
 		<title>HTML Academy: Седона</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="../css/symbols-sedona.css">
 	</head>
 	<body>
 		<header class="main-header container">
@@ -21,31 +22,59 @@
 			<a href="index.html" class="logo-link"><img src="img/sedona-logo.png" alt="sedona" width="138" height="70"></a>
 		</header>
 		<main class="container">
-			<form action="#" method="get" class="hotel-param">
-				<fieldset class="hotel-infrastructure clearfix">
+			<form action="#" method="get" class="hotel-param clearfix">
+				<fieldset class="hotel-infrastructure">
 					<legend>Инфраструктура:</legend>
-					<label><input type="checkbox" name="pool">Бассейн</label><br>
-					<label><input type="checkbox" name="parking">Парковка</label><br>
-					<label><input type="checkbox" name="wi-fi">WI-FI</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="pool">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						Бассейн
+					</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="parking">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						Парковка
+					</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="wi-fi">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						WI-FI</label>
 				</fieldset>
 				<fieldset class="hotel-type">
 					<legend>Тип жилья:</legend>
-					<label><input type="checkbox" name="hotel">Гостиница</label><br>
-					<label><input type="checkbox" name="motel">Мотель</label><br>
-					<label><input type="checkbox" name="appartment">Аппартементы</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="hotel">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						Гостиница</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="motel">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						Мотель</label>
+					<label class="hotel-checkbox">
+						<input type="checkbox" name="appartment">
+						<i class="icon-check-off"></i>
+						<i class="icon-check-on"></i>
+						Аппартементы</label>
 				</fieldset>
 				<div class="price">
-					<fieldset>
-						<legend>Стоимость в сутки(Р):</legend>
-						<label>от<input type="number" name="min-price" min="0" step="1"></label>
-						<label>до<input type="number" name="max-price" min="0" step="1"></label>
-					</fieldset>
-					<div class="scale">
-						<div class="inside-scale"></div>
+					<div class="filter-range-title">Стоимость в сутки (р):</div>
+					<div class="price-controls">						
+						<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+						<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
 					</div>
-					<div class="slider min-slider"></div>
-					<div class="slider max-slider"></div>
-					<button type="submit">Показать</button>
+					<div class="range-controls">
+						<div class="scale">
+							<div class="bar"></div>
+						</div>
+						<div class="range-toggle range-toggle-min"></div>
+						<div class="range-toggle range-toggle-max"></div>
+					</div>
+					<button class="btn-transparent" type="submit">Показать</button>
 				</div>
 			</form>
 			<div class="sort clearfix">
@@ -136,8 +165,8 @@
 				<a class="social-btn social-btn-youtube" href="#">Youtube</a>
 			</section>
 			<section class="footer-copyright">
-				<p>Website by</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<span>Website by</span>
+				<a class="academy-btn" href="https://htmlacademy.ru">HTML Academy</a>
 			</section>
 		</footer>
 	</body>
