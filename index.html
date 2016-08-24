@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header container">
@@ -22,27 +23,27 @@
 		<main class="container">
 			<div class="welcome"></div>
 			<div class="reason">
-				<p class="reason-title">Седона - небольшой городок в Аризоне, заслущивающий большего!</p>
+				<p class="reason-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
 				<p class="reason-text">Рассмотрим 5 причин, по которям Седона круче, чем Гранд Каньон!</p>
 			</div>
 			<div class="features clearfix">
 				<div class="city-1">
 					<h2>Настойщий городок</h2>
-					<p>- №1 -</p>
+					<p>— №1 —</p>
 					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="view-1"></div>
 			</div>
 			<div class="features clearfix">
-				<div class="features-block">
+				<div class="features-block housing">
 					<h2>Жилье</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
 				</div>
-				<div class="features-block">
+				<div class="features-block food">
 					<h2>Еда</h2>
-					<p>Всегда заказывайте фирмерный бургер вы не разочаруетесь!</p>
+					<p>Всегда заказывайте фирмерный бургер, вы не разочаруетесь!</p>
 				</div>
-				<div class="features-block">
+				<div class="features-block souvenirs">
 					<h2>Сувениры</h2>
 					<p>Не только китайского, но и местного производства</p>
 				</div>
@@ -50,7 +51,7 @@
 			<div class="features clearfix">
 				<div class="view-2"></div>
 				<div class="city-2">
-					<h2>Там есть мост дьявола</h2>
+					<h2>Там есть<br> мост дьявола</h2>
 					<p>- №2 -</p>
 					<p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
 				</div>
@@ -58,46 +59,42 @@
 			<div class="features clearfix">
 				<div class="features-city">
 					<h2>Небольшая площадь</h2>
-					<p>- №3 -</p>
+					<p>— №3 —</p>
 					<p>Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="features-city">
 					<h2>Красивая дорога</h2>
-					<p>- №4 -</p>
+					<p>— №4 —</p>
 					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</div>
 				<div class="features-city">
 					<h2>Мало туристов</h2>
-					<p>- №5 -</p>
+					<p>— №5 —</p>
 					<p>Большинство едет в Гранд Каньон и толпится там</p>
 				</div>
 			</div>
 			<div class="hotel">
 				<p class="hotel-title">Заинтересовались?</p>
-				<p class="hotel-text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<p class="hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="hotel-search-btn" href="#">Поиск гостиницы в Седоне</a>
-				<form action="#" method="get">
-					<label>
-						Дата заезда:
-						<input type="date" name="checkin">
-					</label>
-					<label>
-						Дата выезда:
-						<input type="date" name="checkout">
-					</label>
+				<form action="#" method="get" class="hotel-search-form">
+					<label for="checkin-id">Дата заезда:</label>
+					<input type="date" name="checkin" id="checkin-id"><br>
+					<label for="checkout-id">Дата выезда:</label>
+					<input type="date" name="checkout" id="checkout-id">
 					<div class="hotel-people">
-						<label for="adilt-id">Взрослые</label>
-						<button class="hotel-people-less" href="#">-</button>
-						<input type="number" min="1" step="1" name="adult" id="adult-id">
-						<button class="hotel-people-more" href="#">+</button>
+						<label for="adult-id">Взрослые:</label>
+						<button class="hotel-people-less">-</button
+						><input type="number" min="1" step="1" name="adult" id="adult-id"
+						><button class="hotel-people-more">+</button>
 					</div>
 					<div class="hotel-people">
-						<label for="children-id">Дети</label>
-						<button class="hotel-people-less" href="#">-</button>
-						<input type="number" min="1" step="1" name="children" id="children-id">
-						<button class="hotel-people-more" href="#">+</button>
+						<label for="children-id">Дети:</label>
+						<button class="hotel-people-less">-</button
+						><input type="number" min="1" step="1" name="children" id="children-id"
+						><button class="hotel-people-more">+</button>
 					</div>	
-					<button type="submit">Найти</button>
+					<button type="submit" class="search-btn">Найти</button>
 				</form>
 			</div>
 			<div class="map"></div>
@@ -112,8 +109,8 @@
 				<a class="social-btn social-btn-youtube" href="#">Youtube</a>
 			</section>
 			<section class="footer-copyright">
-				<p>Website by</p>
-				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				<span>Website by</span>
+				<a class="academy-btn" href="https://htmlacademy.ru">HTML Academy</a>
 			</section>
 		</footer>
 	</body>
