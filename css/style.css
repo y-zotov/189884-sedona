@@ -249,7 +249,7 @@ p {
 	margin-bottom: 30px;
 	margin-left: 7px;
 	padding-left: 15px;
-	background: #f2f2f2 /*url("../img/icon-calendar.png") no-repeat 315px center*/;
+	background: #f2f2f2;
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -580,23 +580,20 @@ input[type="checkbox"] {
 .sort {
 	border-bottom: 1px solid #e5e5e5;
 }
-.sort > p,
-.sort > a {
+.sort > p {
 	margin: 36px 0 32px;
 	float: left;
 	font-size: 12px;
 	line-height: 18px;
 }
-.sort > a {
-	position: relative;
-	display: table-caption;
+/*.sort > a {
 	margin-left: 37px;
 	color: #000;
 	opacity: 0.3;
 	text-decoration: none;
-	border-bottom: 1px dotted #81b3d2; /*знаю, что не правильно, тоже становиться прозрачным. пробовал блоком, что ниже, но все-равно подчеркивание */
+	border-bottom: 1px dotted #81b3d2; знаю, что не правильно, тоже становиться прозрачным. пробовал блоком, что ниже, но все-равно подчеркивание 
 }
-/*.sort > a:after {
+.sort > a:after {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -609,36 +606,60 @@ input[type="checkbox"] {
 .sort .active-link:after {
 	display: none;
 }*/
-.sort > a:hover {
-	opacity: 1;
-	color: #81b3d2;
+.sort-link {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 33px;
+	margin-left: 40px;
+	margin-right: -11px;
+	border-bottom: 1px dotted #81b3d2;
 }
-.sort > a:active {
+.sort-link a {
+	font-size: 12px;
+	line-height: 18px;
+	color: #000;
+	opacity: 0.3;
+	text-decoration: none; 
+}
+.sort-link a:hover {
+	color: #81b3d2;
+	opacity: 1; 
+}
+.sort-link:active,
+.sort-link:active a {
 	border: none;
 	color: #000;
 }
+.active-link a,
+.active-link a:hover,
+.active-link a:active {
+	color: #81b3d2;
+	opacity: 1;
+}
+.active-link {
+	border: none;
+}
+
 .up-down {
 	float: right;
 }
-.up-down .link-up,
-.up-down .link-down {
-	margin: 33px 0 30px;
+.arrow-up,
+.arrow-down {
+	margin: 33px 0 27px;
 	float: left;
 	font-size: 24px;
 	margin-right: -10px;
 	color: #cccccc;
 }
-.link-up:hover,
-.link-down:hover {
+.arrow-up:hover,
+.arrow-down:hover {
 	color: #000;
 }
-.link-up:active,
-.link-down:active {
-	color: #81b3d2;
-}
-.sort .active-link {
-	border: none;
-	opacity: 1;
+.arrow-up:active,
+.arrow-down:active,
+.active-arrow,
+.active-arrow:hover,
+.active-arrow:active {
 	color: #81b3d2;
 }
 
@@ -678,7 +699,7 @@ input[type="checkbox"] {
 	line-height: 26px;
 	font-weight: bold;
 	margin-top: -5px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	text-align: left;
 }
 .hotel-name:hover { 
