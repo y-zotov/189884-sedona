@@ -7,7 +7,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #f2f2f2;
-	background: url("../img/sedona-hotels-1200.jpg") no-repeat 50% 0;*/
+	/*background: url("../img/sedona-hotels-1200.jpg") no-repeat 50% 0;*/
 }
 nav {
 	font-weight: bold;
@@ -25,7 +25,7 @@ p {
 	min-width: 768px;
 	max-width: 1200px;
 	margin: 0 auto;
-	/*background: #fff;*/
+	background: #fff;
 }
 .clearfix:after {
   content: "";
@@ -43,6 +43,23 @@ p {
 .main-navigation a {
 	text-decoration: none;
 	color: #000;
+}
+.main-navigation a:hover {
+	color: #81b3d2;
+}
+.main-navigation a:active {
+	color: #000;
+	opacity: 0.3;
+}
+.main-navigation .current-page {
+	color: #766357;
+}
+.main-navigation .current-page:hover {
+	color: #604e43;
+}
+.main-navigation .current-page:active {
+	color: #766357;
+	opacity: 0.3;
 }
 .navigation-info-media,
 .navigation-map-hotels {
@@ -222,17 +239,41 @@ p {
 	line-height: 26px;
 	width: 100px;
 }
-.hotel-search-form input[type="date"] {
+.checkin,
+.checkout {
+	position: relative;
 	height: 38px;
-	width: 346px;
+	width: 331px;
 	border: none;
 	outline: none;
 	margin-bottom: 30px;
 	margin-left: 7px;
-	background: #f2f2f2 url("../img/icon-calendar.png") no-repeat 315px center;
+	padding-left: 15px;
+	background: #f2f2f2 /*url("../img/icon-calendar.png") no-repeat 315px center*/;
 	font-weight: bold;
-	line-height: 26px;
+	font-size: 14px;
 	text-transform: uppercase;
+}
+.checkin:hover,
+.checkout:hover {
+	background-color: #ebebeb;
+}
+.checkin:focus,
+.checkout:focus {
+	background: #fff;
+	outline: #e5e5e5 solid 2px;
+}
+.checkin-label,
+.checkout-label {
+	position: relative;
+}
+.icon-calendar {
+	position: absolute;
+	left: 420px;
+	font-size: 21px;
+	color: red;
+	z-index: 2;
+	color: #c2c2c2;
 }
 .hotel-people {
 	display: inline-block;
@@ -241,6 +282,23 @@ p {
 .hotel-people-more {
 	width: 38px;
 	height: 38px;
+	border: none;
+	background: #f2f2f2;
+	font-size: 14px;
+}
+.icon-minus, 
+.icon-plus {
+	color: #a9a9a9;
+}
+.icon-minus:hover, 
+.icon-plus:hover, 
+.icon-calendar:hover {
+	color: #000;
+}
+.icon-minus:active, 
+.icon-plus:active,
+.icon-calendar:active {
+	color: #81b3d2;
 }
 .hotel-people-less {
 	margin-left: 10px;
@@ -249,12 +307,16 @@ p {
 	margin-left: 50px;
 	width: 52px;
 }
-.hotel-people input[type="number"] {
+.hotel-people input[type="text"] {
 	width: 36px;
 	height: 36px;
 	text-align: center;
 	border: none;
 	outline: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #f2f2f2;
+	font-size: 14px;
 }
 .search-btn {
 	font-size: 21px;
@@ -268,7 +330,18 @@ p {
 	outline: none;
 	margin-top: 53px;
 	background: #81b3d2;
+	cursor: pointer;
 }
+.search-btn:hover {
+	background: #669ec0;
+}
+.search-btn:active {
+	background: #5496bd;
+}
+.search-btn:active .search-btn-text {
+	opacity: 0.3;
+}
+
 .map {
 	min-height: 473px;
 	background: url("../img/map.jpg") no-repeat 50% 0;
@@ -294,21 +367,24 @@ p {
 .social-btn {
   display: inline-block;
   width: 46px;
-  height: 48px;
   margin: 0 2px;
-  font-size: 0;
-  vertical-align: top;
-  text-decoration: none;
+  font-size: 20px;
+	padding: 14px 0;
+	background: #81b3d2;
+	color: #fff;
 }
-.social-btn-tw {
-  background: #81b3d2 url("../img/icon-tw.png") no-repeat center;
+.social-btn:hover {
+	background: #669ec0;
 }
-.social-btn-fb {
-  background: #81b3d2 url("../img/icon-fb.png") no-repeat center;
+.social-btn:active {
+	background: #5496bd;
 }
-.social-btn-youtube {
-  background: #81b3d2 url("../img/icon-youtube.png") no-repeat center;
+.social-btn:active .icon-twitter,
+.social-btn:active .icon-facebook,
+.social-btn:active .icon-youtube {
+	opacity: 0.3;
 }
+
 .footer-copyright {
 	padding: 40px 0;
 }
@@ -321,6 +397,12 @@ p {
   vertical-align: middle;
   text-decoration: none;
 	background: url("../img/logo-htmlacademy.png") no-repeat center;
+}
+.academy-btn:hover {
+	background: url("../img/logo-htmlacademy-hvr.png") no-repeat center;
+}
+.academy-btn:active {
+	background: url("../img/logo-htmlacademy-down.png") no-repeat center;
 }
 
 /*для catalog.html*/
@@ -335,7 +417,7 @@ p {
 	color: #fff;
 	padding-top: 27px;
 	padding-bottom: 32px;
-	/*background: url("../img/filter-background.jpg") no-repeat 50% -40px;*/
+	background: url("../img/filter-background.jpg") no-repeat 50% -40px;
 }
 .hotel-param legend {
 	font-size: 16px;
@@ -360,7 +442,7 @@ p {
 .hotel-type .hotel-checkbox {
 	padding-left: 7px;
 }
-.hotel-checkbox input[type="checkbox"] {
+input[type="checkbox"] {
 	display: none;
 }
 .icon-check-on,
@@ -370,7 +452,7 @@ p {
 	left: -7px;
 	font-size: 24px;
 }
-.hotel-type icon-check-on,
+.hotel-type .icon-check-on,
 .hotel-type .icon-check-off {
 	left: -10px;
 }
@@ -383,7 +465,12 @@ p {
 .hotel-checkbox input[type="checkbox"]:checked ~ .icon-check-off {
 	display: none;
 }
-
+.hotel-checkbox input[type="checkbox"]:disabled ~ .icon-check-off {
+	color: #6a6a6a;
+}
+.hotel-checkbox input[type="checkbox"]:disabled ~ .icon-check-on {
+	color: #6a6a6a;
+}
 
 .price {
 	float: right;
@@ -490,41 +577,185 @@ p {
 
 
 
-
 .sort {
-	min-height: 86px;
 	border-bottom: 1px solid #e5e5e5;
 }
-.sort p,
-.sort a {
-	margin: 0;
+.sort > p,
+.sort > a {
+	margin: 36px 0 32px;
 	float: left;
+	font-size: 12px;
+	line-height: 18px;
+}
+.sort > a {
+	position: relative;
+	display: table-caption;
+	margin-left: 37px;
+	color: #000;
+	opacity: 0.3;
+	text-decoration: none;
+	border-bottom: 1px dotted #81b3d2; /*знаю, что не правильно, тоже становиться прозрачным. пробовал блоком, что ниже, но все-равно подчеркивание */
+}
+/*.sort > a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	border-top: 1px dotted #81b3d2;
+	opacity: 1;
+}
+.sort .active-link:after {
+	display: none;
+}*/
+.sort > a:hover {
+	opacity: 1;
+	color: #81b3d2;
+}
+.sort > a:active {
+	border: none;
+	color: #000;
 }
 .up-down {
-	float:right;
+	float: right;
+}
+.up-down .link-up,
+.up-down .link-down {
+	margin: 33px 0 30px;
+	float: left;
+	font-size: 24px;
+	margin-right: -10px;
+	color: #cccccc;
+}
+.link-up:hover,
+.link-down:hover {
+	color: #000;
+}
+.link-up:active,
+.link-down:active {
+	color: #81b3d2;
+}
+.sort .active-link {
+	border: none;
+	opacity: 1;
+	color: #81b3d2;
+}
+
+.sort .sort-text {
+	margin-left: 48px;
+}
+.sort .seach-quantity {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	margin: 30px 0;
+}
+
+
+
+
+.result {
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 31px;
+	min-height: 119px;
+}
+.result img {
+	width: 135px;
+	height: 90px;
 }
 .hotel-features,
 .result a{
 	float: left;
 }
-.stars-rating {
-	float: right;
-}
-.result {
-	border-bottom: 1px solid #e5e5e5;
-	padding-top: 30px;
-	min-height: 119px;
-}
 .hotel-features {
 	margin-left: 31px;
 }
-.hotel-features h2 {
-	margin: 0;
+.hotel-name {
+	text-decoration: none;
+	color: #000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	text-align: left;
 }
-.hotel-price p,
-.hotel-info, 
-.hotel-reserv {
+.hotel-name:hover { 
+	color: #81b3d2;
+}
+.hotel-name:active {
+	color: #000;
+	opacity: 0.3;
+}
+.hotel-price p {
+	text-align: left;
 	float: left;
 	width: 110px;
+	margin: 0;
+	padding: 0;
 	margin-right: 6px;
+	margin-bottom: 14px;
+}
+.hotel-btn {
+	font-size: 0;
+}
+.hotel-info-btn, 
+.hotel-reserv-btn {
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 7px;
+}
+.hotel-btn .hotel-info,
+.hotel-btn .hotel-reserv {
+	padding: 3px 16px;
+	text-decoration: none;
+	color: #fff;
+}
+.hotel-info-btn {
+	background: #81b3d2;
+}
+.hotel-info-btn:hover {
+	background: #669ec0;
+}
+.hotel-info-btn:active {
+	background: #5496bd;
+}
+.hotel-info-btn:active .hotel-info {
+	opacity: 0.3;
+}
+.hotel-reserv-btn {
+	background: #766357;
+}
+.hotel-reserv-btn:hover {
+	background: #604e43;
+}
+.hotel-reserv-btn:active {
+	background: #503e33;
+}
+.hotel-reserv-btn:active .hotel-reserv {
+	opacity: 0.3;
+}
+
+
+.stars-rating {
+	float: right;
+	margin-top: -3px;
+}
+.stars {
+	text-align: right;
+	margin-right: -5px;
+	margin-top: -2px;
+}
+.icon-star {
+	font-size: 18px;
+	color: #81b3d2;
+	margin-left: -5px;
+}
+.rating {
+	margin-top: 45px;
+	padding: 2px 14px;
+	color: #666666;
+	background: #f2f2f2;
 }

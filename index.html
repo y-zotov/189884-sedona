@@ -5,6 +5,7 @@
 		<title>HTML Academy: Седона</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/symbols-sedona.css">
 	</head>
 	<body>
 		<header class="main-header container">
@@ -78,23 +79,23 @@
 				<p class="hotel-text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="hotel-search-btn" href="#">Поиск гостиницы в Седоне</a>
 				<form action="#" method="get" class="hotel-search-form">
-					<label for="checkin-id">Дата заезда:</label>
-					<input type="date" name="checkin" id="checkin-id"><br>
-					<label for="checkout-id">Дата выезда:</label>
-					<input type="date" name="checkout" id="checkout-id">
+					<label for="checkin-id" class="checkin-label">Дата заезда:<i class="icon-calendar"></i></label>
+					<input type="text" name="checkin" id="checkin-id" value="24 апреля 2016" class="checkin"><br>
+					<label for="checkout-id" class="checkout-label">Дата выезда:<i class="icon-calendar"></i></label>
+					<input type="text" name="checkout" id="checkout-id" value="4 июля 2016" class="checkout">
 					<div class="hotel-people">
 						<label for="adult-id">Взрослые:</label>
-						<button class="hotel-people-less">-</button
-						><input type="number" min="1" step="1" name="adult" id="adult-id"
-						><button class="hotel-people-more">+</button>
+						<button class="hotel-people-less"><i class="icon-minus"></i></button
+						><input type="text" name="adult" id="adult-id" value="2"
+						><button class="hotel-people-more"><i class="icon-plus"></i></button>
 					</div>
 					<div class="hotel-people">
 						<label for="children-id">Дети:</label>
-						<button class="hotel-people-less">-</button
-						><input type="number" min="1" step="1" name="children" id="children-id"
-						><button class="hotel-people-more">+</button>
+						<button class="hotel-people-less"><i class="icon-minus"></i></button
+						><input type="text" name="children" id="children-id" value="0"
+						><button class="hotel-people-more"><i class="icon-plus"></i></button>
 					</div>	
-					<button type="submit" class="search-btn">Найти</button>
+					<button type="submit" class="search-btn"><span class="search-btn-text">Найти</span></button>
 				</form>
 			</div>
 			<div class="map"></div>
@@ -104,9 +105,9 @@
 				<a href="#">#VISITSEDONA</a>
 			</section>
 			<section class="footer-social">
-				<a class="social-btn social-btn-tw" href="#">Twitter</a>
-				<a class="social-btn social-btn-fb" href="#">Facebook</a>
-				<a class="social-btn social-btn-youtube" href="#">Youtube</a>
+				<a class="social-btn" href="#"><i class="icon-twitter"></i></a>
+				<a class="social-btn" href="#"><i class="icon-facebook"></i></a>
+				<a class="social-btn" href="#"><i class="icon-youtube"></i></a>
 			</section>
 			<section class="footer-copyright">
 				<span>Website by</span>
