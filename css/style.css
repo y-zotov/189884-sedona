@@ -633,34 +633,29 @@ input[type="checkbox"] {
 	font-size: 12px;
 	line-height: 18px;
 }
-.sort-link {
+.sort > a {
 	display: inline-block;
 	vertical-align: top;
-	margin-top: 33px;
+	margin-top: 35px;
 	margin-left: 31px;
 	border-bottom: 1px dotted #81b3d2;
-}
-.sort-link a {
 	font-size: 12px;
 	line-height: 18px;
-	color: #000;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 	text-decoration: none; 
 }
-.sort-link a:hover {
+.sort > a:hover {
 	color: #81b3d2;
-	opacity: 1; 
 }
-.sort-link:active,
-.sort-link:active a {
+.sort >a:active {
 	border: none;
 	color: #000;
 }
-.active-link a,
-.active-link a:hover,
-.active-link a:active {
+.sort .active-link,
+.sort .active-link:hover,
+.sort .active-link:active {
 	color: #81b3d2;
-	opacity: 1;
+	border: none;
 }
 .active-link {
 	border: none;
