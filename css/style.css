@@ -131,7 +131,12 @@ p {
 }
 .welcome {
 	min-height: 508px;
-	background:	url("../img/background-photo-new.jpg") no-repeat 50% 20%;
+	background:	
+		url("../img/shape.png") no-repeat 50% 100%,
+		url("../img/background-photo-new.jpg") no-repeat 50% 20%;
+	background-size: 
+		100% 57px,
+		auto;
 }
 .reason-title,
 .reason-text,
