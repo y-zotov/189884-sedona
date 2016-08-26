@@ -317,6 +317,11 @@ p {
 }
 .hotel-people {
 	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+}
+.hotel-people label {
+	font-size: 14px;
 }
 .hotel-people-less,
 .hotel-people-more {
@@ -332,13 +337,13 @@ p {
 .icon-plus {
 	color: #a9a9a9;
 }
-.icon-minus:hover, 
-.icon-plus:hover, 
+.hotel-people-less:hover .icon-minus, 
+.hotel-people-more:hover .icon-plus, 
 .icon-calendar:hover {
 	color: #000;
 }
-.icon-minus:active, 
-.icon-plus:active,
+.hotel-people-less:active .icon-minus, 
+.hotel-people-more:active .icon-plus,
 .icon-calendar:active {
 	color: #81b3d2;
 }
@@ -388,6 +393,7 @@ p {
 	min-height: 473px;
 	background: #f2f1ef url("../img/map.jpg") no-repeat 50% 0;
 }
+
 .main-footer section {
 	float: left;
 	width: 33.3333%;
@@ -408,6 +414,7 @@ p {
 }
 .social-btn {
  	display: inline-block;
+	vertical-align: top;
  	width: 46px;
  	margin: 0 2px;
 	font-size: 0px;
@@ -437,12 +444,12 @@ p {
 	padding: 42px 0;
 }
 .academy-btn {
-  	display: inline-block;
+	display: inline-block;
+	vertical-align: middle;
 	width: 113px;
 	height: 39px;
 	margin: 0 2px;
 	font-size: 0;
-	vertical-align: middle;
 	text-decoration: none;
 	background: url("../img/logo-htmlacademy.png") no-repeat center;
 }
@@ -557,9 +564,9 @@ input[type="checkbox"] {
 }
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 35px;
-	vertical-align: top;
 	cursor: pointer;
 	width: 31%;
 	padding-left: 19%;
