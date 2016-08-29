@@ -138,6 +138,10 @@ p {
 		100% 57px,
 		auto;
 }
+.reason,
+.features {
+	background: #fff;
+}
 .reason-title,
 .reason-text,
 .hotel-title,
@@ -168,7 +172,7 @@ p {
 }
 .city-1,
 .city-2 {
-	width: 25.3333%;
+	width: 25.3%;
 	color: #fff;
 	background: #81b3d2;
 	padding-left: 4%; 
@@ -182,18 +186,17 @@ p {
 }
 .city-1 p,
 .city-2 p {
-	
 	margin: 0 auto;
 	padding-top: 22px;
 }
 .view-1 {
-	width: 66.6666%;
+	width: 66.7%;
 	background: url("../img/view-1.jpg") no-repeat 50% 50%;
 	background-size: cover;
 }
 .features-block {
 	float: left;
-	width: 25.3333%;
+	width: 25.33%;
 	padding-left: 4%;
 	padding-right: 4%;
 	padding-top: 145px;
@@ -214,15 +217,18 @@ p {
 	color: #333333;
 }
 .view-2 {
-	width: 66.6666%;
+	width: 66.7%;
 	background: url("../img/view-2.jpg") no-repeat 50% 50%;
 	background-size: cover;
 }
 .features-city {
 	float: left;
 	min-height: 256px;
-	width: 33.3333%;
+	width: 33.3%;
 	background: #eeeeee;
+}
+.features-city:last-child {
+	width: 33.4%;
 }
 .features-city h2 {
 	width: 160px;
@@ -287,7 +293,7 @@ p {
 .checkout {
 	position: relative;
 	height: 38px;
-	width: 329px;
+	width: 328px;
 	border: none;
 	outline: none;
 	margin-left: 10px;
@@ -310,7 +316,7 @@ p {
 .icon-calendar {
 	position: absolute;
 	left: 425px;
-	top: 5px;
+	top: 7px;
 	font-size: 21px;
 	color: red;
 	z-index: 2;
@@ -349,7 +355,7 @@ p {
 	color: #81b3d2;
 }
 .hotel-people-less {
-	margin-left: 14px;
+	margin-left: 12px;
 }
 .hotel-people label[for="children-id"] {
 	margin-left: 50px;
@@ -398,7 +404,7 @@ p {
 
 .main-footer section {
 	float: left;
-	width: 33.3333%;
+	width: 33.33%;
 	text-align: center;
 }
 .footer-visite {
