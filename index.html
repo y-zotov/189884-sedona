@@ -25,13 +25,13 @@
 				<div class="welcome"></div>
 				<div class="reason">
 					<p class="reason-title">Седона — небольшой городок в Аризоне, заслуживающий 	большего!</p>
-					<p class="reason-text">Рассмотрим 5 причин, по которям Седона круче, чем Гранд Каньон!</p>
+					<p class="reason-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 				</div>
 				<div class="features clearfix">
 					<div class="city-1">
-						<h2>Настойщий городок</h2>
+						<h2>Настоящий городок</h2>
 						<p>— №1 —</p>
-						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						<p>Седона — не аттракцион для туристов,<br> там течет своя жизнь</p>
 					</div>
 					<div class="view-1"></div>
 				</div>
@@ -121,5 +121,13 @@
 				</section>
 			</footer>
 		</div>
+		<script>
+			var link = document.querySelector(".hotel-search-btn");
+			var popup = document.querySelector(".hotel-search-form");
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.toggle("hotel-search-form-show");
+      });
+		</script>
 	</body>
 </html>

@@ -117,6 +117,10 @@ p {
 	text-align: center;
 	width: 50%;
 }
+.navigation-map-hotels li:last-child {
+	padding-left: 4%;
+	width: 46%;
+}
 .logo-link {
 	position: absolute;
 	width: 138px;
@@ -130,7 +134,7 @@ p {
 	min-height: 508px;
 	background:	
 		url("../img/shape.png") no-repeat 50% 100%,
-		url("../img/background-photo-new.jpg") no-repeat 50% 20%;
+		url("../img/background-photo-new.jpg") no-repeat 50% 21%;
 	background-size: 
 		100% 57px,
 		auto;
@@ -188,7 +192,7 @@ p {
 }
 .view-1 {
 	width: 66.7%;
-	background: url("../img/view-1.jpg") no-repeat 50% 50%;
+	background: url("../img/view-1.jpg") no-repeat 50% 53%;
 	background-size: cover;
 }
 .features-block {
@@ -215,7 +219,7 @@ p {
 }
 .view-2 {
 	width: 66.7%;
-	background: url("../img/view-2.jpg") no-repeat 50% 50%;
+	background: url("../img/view-2.jpg") no-repeat 50% 53%;
 	background-size: cover;
 }
 .features-city {
@@ -244,7 +248,7 @@ p {
 	position: relative;
 }
 .hotel-title {
-	padding-top: 60px;
+	padding-top: 55px;
 	font-weight: bold;
 	font-size: 30px;
 }
@@ -258,23 +262,40 @@ p {
 	margin-top: 48px;
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: bold;
 	text-decoration: none;
-	padding: 30px;
-	width: 508px;
+	padding: 31px 0 29px;
+	width: 568px;
 	text-align: center;
 	background: #766357;
 	color: #fff;
 }
+@keyframes bounce {
+  0%   {
+    transform: scale(0.1);
+  }
+  90%  {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .hotel-search-form {
+	display: none;
 	position: absolute;
 	width: 458px;
 	min-height: 285px;
-	top: 294px;
+	top: 289px;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 	padding: 55px;
 	background: #fff;
+}
+.hotel-search-form-show {
+	display: block;
+	animation: bounce 0.6s;
 }
 .hotel-search-form label {
 	display: inline-block;
@@ -285,7 +306,7 @@ p {
 }
 .hotel-search-element {
 	position: relative;
-	margin-bottom: 27px;
+	margin-bottom: 28px;
 }
 .checkin,
 .checkout {
@@ -297,6 +318,7 @@ p {
 	margin-left: 10px;
 	padding-left: 15px;
 	background: #f2f2f2;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -327,6 +349,8 @@ p {
 }
 .hotel-people label {
 	font-size: 14px;
+	line-height: 38px;
+	vertical-align: top;
 }
 .hotel-people-less,
 .hotel-people-more {
@@ -353,7 +377,7 @@ p {
 	color: #81b3d2;
 }
 .hotel-people-less {
-	margin-left: 12px;
+	margin-left: 14px;
 }
 .hotel-people label[for="children-id"] {
 	margin-left: 50px;
@@ -381,7 +405,6 @@ p {
 	color: #fff;
 	border: none;
 	outline: none;
-	
 	background: #81b3d2;
 	cursor: pointer;
 }
@@ -416,7 +439,7 @@ p {
 	text-decoration: none;
 }
 .footer-social {
-	padding: 37px 0;
+	padding: 33px 0;
 }
 .social-btn {
  	display: inline-block;
@@ -447,7 +470,7 @@ p {
 }
 
 .footer-copyright {
-	padding: 42px 0;
+	padding: 38px 0;
 }
 .academy-btn {
 	display: inline-block;
@@ -498,7 +521,7 @@ p {
 .hotel-checkbox {
 	position: relative;
 	display: block;
-	margin-top: 20px;
+	margin-top: 19px;
 	cursor: pointer;
 }
 .hotel-type .hotel-checkbox {
@@ -512,7 +535,7 @@ input[type="checkbox"] {
 	position: relative;
 	top: 3px;
 	left: -7px;
-	font-size: 24px;
+	font-size: 25px;
 }
 .icon-check-on {
 	left: -5px;
@@ -553,7 +576,7 @@ input[type="checkbox"] {
  	position: relative;
 	height: 34px;
  	margin-bottom: 20px;
-	margin-left: 14px;
+	margin-left: 12px;
 	font-size: 0;
  	border: 2px solid #ffffff;
  	border-radius: 2px;
@@ -574,8 +597,12 @@ input[type="checkbox"] {
 	font-size: 14px;
 	line-height: 35px;
 	cursor: pointer;
-	width: 31%;
-	padding-left: 19%;
+	width: 33%;
+	padding-left: 17%;
+}
+.price-controls .min-price {
+	width: 30%;
+	padding-left: 20%;
 }
 .price-controls input {
 	width: 50%;
@@ -618,7 +645,7 @@ input[type="checkbox"] {
 	background: #1c4f80;
 }
 .range-toggle-min {
-	left: 0;
+	left: -2px;
 }
 .range-toggle-max {
 	left: 80%;
@@ -754,12 +781,12 @@ input[type="checkbox"] {
 	margin-top: 8px;
 	padding: 0;
 	margin-right: 6px;
-	margin-bottom: 14px;
+	margin-bottom: 13px;
 	color: #333333;
 }
 .hotel-btn {
 	font-size: 0;
-	margin-bottom: 29px;
+	margin-bottom: 30px;
 }
 .hotel-info-btn, 
 .hotel-reserv-btn {
