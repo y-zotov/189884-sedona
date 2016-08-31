@@ -435,7 +435,21 @@ p {
 }
 .map iframe {
 	width: 100%;
-	min-height: 470px;
+	min-height: 585px;
+}
+.index-page,
+.inner-page {
+	position: relative;
+}
+.inner-page {
+	padding-bottom: 117px;
+}
+.main-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.9);
 }
 .main-footer section {
 	float: left;
@@ -778,12 +792,14 @@ input[type="checkbox"] {
 	margin-left: 30px;
 }
 .hotel-name {
+	display: block;
 	text-decoration: none;
 	color: #000;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
 	text-align: left;
+	max-width: 380px;
 }
 .hotel-name:hover { 
 	color: #81b3d2;
