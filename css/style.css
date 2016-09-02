@@ -1,25 +1,25 @@
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-family: "symbols-sedona";
+	src: url("../fonts/symbols-sedona.woff") format("woff"),
+	     url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	font-weight: normal;
+	line-height: 1em;
+	font-family: "symbols-sedona";
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	font-style: normal;
+	font-variant: normal;
+	speak: none;
 }
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
@@ -280,32 +280,32 @@ p {
 	color: #fff;
 }
 @-webkit-keyframes bounce {
-  0%   {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  90%  {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+	0% {
+		-webkit-transform: scale(0.1);
+		        transform: scale(0.1);
+	}
+	90% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 }
 @keyframes bounce {
-  0%   {
-    -webkit-transform: scale(0.1);
-            transform: scale(0.1);
-  }
-  90%  {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+	0% {
+		-webkit-transform: scale(0.1);
+		        transform: scale(0.1);
+	}
+	90% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
 }
 .hotel-search-form {
 	display: none;
@@ -618,10 +618,10 @@ input[type="checkbox"] {
 	width: 31%;
 }
 .filter-range-title {
-  margin-bottom: 9px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 21px;
+	margin-bottom: 9px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 21px;
 }
 .price-controls {
  	position: relative;
